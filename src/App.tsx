@@ -7,6 +7,7 @@ import Summary from "./components/Summary";
 import Benefits from "./components/Benefits";
 import PlanView from "./components/PlanView";
 import Testimonials from "./components/Testimonials";
+import ContactForm from "./components/ContactForm";
 
 type View = "home" | "beneficios" | "plan" | "testimonios";
 
@@ -48,6 +49,7 @@ export default function App() {
           <>
             <Hero />
             <Summary />
+            <ContactForm />
           </>
         )}
         {view === "beneficios" && <Benefits />}
