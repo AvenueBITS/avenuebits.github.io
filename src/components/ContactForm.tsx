@@ -51,7 +51,6 @@ function validate(v: Values) {
   if (!v.firstName.trim()) errors.firstName = "Escribe tu nombre";
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email.trim()))
     errors.email = "Revisa el email";
-  if (!v.service) errors.service = "Elige un servicio";
   return errors;
 }
 
@@ -264,13 +263,13 @@ export default function ContactForm() {
                       <input {...props("city")} type="text" autoComplete="address-level2" placeholder="Ciudad" />
                     </Field>
 
-                    <Field id="cf-service" label="Servicio de interés *" error={errors.service} className="sm:col-span-2">
+                    <Field id="cf-service" label="Servicio de interés" className="sm:col-span-2">
                       <select
                         {...props("service")}
                         className={cn(props("service").className, "cursor-pointer appearance-none pr-12", !values.service && "text-slate-500")}
                       >
-                        <option value="" disabled>
-                          Elige una opción
+                        <option value="" className="bg-ink-900 text-white">
+                          Elige una opción (o cuéntanoslo abajo)
                         </option>
                         {SERVICE_OPTIONS.map((o) => (
                           <option key={o.value} value={o.value} className="bg-ink-900 text-white">
@@ -285,8 +284,8 @@ export default function ContactForm() {
                       <textarea
                         {...props("details")}
                         rows={4}
-                        placeholder="Detalle"
-                        className={cn(props("details").className, "resize-none")}
+                        placeholder="¿No ves tu servicio en la lista? Cuéntanos aquí qué necesitas."
+                        className={cn(props("details").className, "resize-none placeholder:text-slate-600")}
                       />
                     </Field>
 

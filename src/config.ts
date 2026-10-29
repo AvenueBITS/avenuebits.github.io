@@ -33,22 +33,15 @@ export const HUBSPOT_FIELDS = {
 
 /** Opciones del desplegable: `value` = valor interno de la opción en HubSpot. */
 export const SERVICE_OPTIONS: { label: string; value: string }[] = [
-  { label: "Servicios de TI administrados", value: "Managed IT Services" },
-  { label: "IT Office PRO", value: "IT Office PRO" },
-  { label: "Ciberseguridad", value: "Cybersecurity" },
-  { label: "Cumplimiento normativo", value: "Regulation Compliance" },
-  { label: "IA y automatización", value: "AI and Automation" },
-  { label: "Consultoría tecnológica", value: "Business Technology Consulting" },
-  { label: "Consultoría de redes", value: "Networking Consulting" },
-  { label: "Smart WiFi", value: "Smart WiFi" },
-  { label: "Telefonía y VoIP", value: "Telephone and VoIP Services" },
-  { label: "Videovigilancia", value: "Video Surveillance" },
-  { label: "Control de acceso", value: "Access Control" },
-  { label: "Control horario biométrico", value: "Biometric Clocking" },
-  { label: "Punto de venta (POS)", value: "Point Of Sale" },
-  { label: "Contador de personas", value: "People Counter" },
-  { label: "Iluminación inteligente", value: "Smart Lights" },
-  { label: "Diseño web", value: "Website Design" },
-  { label: "Otro", value: "Otro" },
+  { label: "Servicios de TI administrados", value: "it_administrado" },
+  { label: "IT Office PRO", value: "it_office_pro" },
+  { label: "Ciberseguridad", value: "ciberseguridad" },
+  { label: "Cumplimiento normativo", value: "cumplimiento_normativo" },
+  { label: "Consultoría tecnológica", value: "consultoria_tecnologia" },
+  { label: "Consultoría de redes", value: "consultoria_redes" },
+  { label: "Telefonía y VoIP", value: "telefonia_voip" },
+  { label: "Control de acceso", value: "control_acceso" },
+  { label: "Reloj biométrico", value: "reloj_biometrico" },
+  { label: "Diseño web", value: "diseno_web" },
 ];
 
