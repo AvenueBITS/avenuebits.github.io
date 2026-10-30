@@ -9,8 +9,8 @@ export const FIND_US_URL = "https://www.avenuebits.com/find-us/";
 export const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/search/?api=1&query=AvenueBITS+Bohemia+NY";
 
-export const PHONE_DISPLAY = "(888) 238-8550";
-export const PHONE_TEL = "tel:+18882388550";
+export const PHONE_DISPLAY = "(631) 913-1799";
+export const PHONE_TEL = "tel:+16319131799";
 export const ADDRESS = "3330 Veterans Memorial Hwy #1, Bohemia, NY 11716";
 
 /** Formulario de contacto de HubSpot (portal 247802838, región na2). */
