@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { EASE, PrimaryButton } from "./ui";
-import { CONSULTATIONS_URL } from "../config";
+import { CONTACT_HREF } from "../config";
 
 const LINE_1 = ["Nosotros", "llevamos", "la", "informática."];
 const LINE_2 = ["Tú", "llevas", "el", "negocio."];
@@ -68,7 +68,7 @@ export default function Hero() {
             transition={{ delay: 0.85, duration: 0.7, ease: EASE }}
             className="mt-5 flex justify-center"
           >
-            <PrimaryButton href={CONSULTATIONS_URL} icon={<ArrowRight className="h-4 w-4" />} className="w-full sm:w-auto">
+            <PrimaryButton href={CONTACT_HREF} icon={<ArrowRight className="h-4 w-4" />} className="w-full sm:w-auto">
               Agenda tu diagnóstico gratuito
             </PrimaryButton>
           </motion.div>

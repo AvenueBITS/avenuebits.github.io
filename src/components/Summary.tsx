@@ -1,6 +1,6 @@
 import { ArrowUpRight, Check, Star } from "lucide-react";
 import { GoogleIcon, PrimaryButton, Reveal } from "./ui";
-import { CONSULTATIONS_URL, GOOGLE_REVIEWS_URL } from "../config";
+import { CONTACT_HREF, GOOGLE_REVIEWS_URL } from "../config";
 
 const STATS = [
   { value: "99.98%", label: "Tiempo activo" },
@@ -92,7 +92,7 @@ export default function Summary() {
                   </li>
                 ))}
               </ul>
-              <PrimaryButton href={CONSULTATIONS_URL} className="mt-4 w-full">
+              <PrimaryButton href={CONTACT_HREF} className="mt-4 w-full">
                 Habla con un asesor
               </PrimaryButton>
             </div>

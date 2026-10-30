@@ -7,6 +7,8 @@ import Summary from "./components/Summary";
 import Benefits from "./components/Benefits";
 import PlanView from "./components/PlanView";
 import Testimonials from "./components/Testimonials";
+import ContactForm from "./components/ContactForm";
+import { CONTACT_HREF } from "./config";
 
 type View = "home" | "beneficios" | "plan" | "testimonios";
 
@@ -15,16 +17,38 @@ function readView(): View {
   return h === "beneficios" || h === "plan" || h === "testimonios" ? h : "home";
 }
 
+/** El formulario vive en la vista de inicio; espera a que se monte y baja hasta él. */
+function scrollToContact() {
+  requestAnimationFrame(() =>
+    document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })
+  );
+}
+
 export default function App() {
   const [view, setView] = useState<View>(readView);
 
   useEffect(() => {
     const onHash = () => {
       setView(readView());
-      window.scrollTo(0, 0);
+      if (window.location.hash === CONTACT_HREF) scrollToContact();
+      else window.scrollTo(0, 0);
     };
     window.addEventListener("hashchange", onHash);
-    return () => window.removeEventListener("hashchange", onHash);
+    if (window.location.hash === CONTACT_HREF) scrollToContact();
+
+    // Pulsar de nuevo un botón cuando la URL ya es #contacto no dispara hashchange.
+    const onClick = (e: MouseEvent) => {
+      const link = (e.target as Element).closest?.(`a[href="${CONTACT_HREF}"]`);
+      if (link && window.location.hash === CONTACT_HREF) {
+        e.preventDefault();
+        scrollToContact();
+      }
+    };
+    document.addEventListener("click", onClick);
+    return () => {
+      window.removeEventListener("hashchange", onHash);
+      document.removeEventListener("click", onClick);
+    };
   }, []);
 
   return (
@@ -48,6 +72,7 @@ export default function App() {
           <>
             <Hero />
             <Summary />
+            <ContactForm />
           </>
         )}
         {view === "beneficios" && <Benefits />}

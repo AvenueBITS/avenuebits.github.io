@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Check, TrendingDown, TrendingUp } from "lucide-react";
 import { EASE, PrimaryButton, Reveal, SectionHeading } from "./ui";
-import { CONSULTATIONS_URL } from "../config";
+import { CONTACT_HREF } from "../config";
 
 const POINTS = [
   {
@@ -151,7 +151,7 @@ export default function Benefits() {
 
             <Reveal delay={0.4} className="mt-9">
               <PrimaryButton
-                href={CONSULTATIONS_URL}
+                href={CONTACT_HREF}
                 icon={<ArrowRight className="h-4 w-4" />}
               >
                 Calcula tu ahorro con nosotros
