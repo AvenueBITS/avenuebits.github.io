@@ -5,7 +5,7 @@ import { Logo } from "./ui";
 import ThemeToggle from "./ThemeToggle";
 import { dialPhone } from "../utils/dial";
 import { cn } from "../utils/cn";
-import { CONSULTATIONS_URL, PHONE_DISPLAY, PHONE_TEL } from "../config";
+import { CONTACT_HREF, PHONE_DISPLAY, PHONE_TEL } from "../config";
 
 const LINKS = [
   { label: "Beneficios", href: "#beneficios" },
@@ -84,7 +84,7 @@ export default function Navbar() {
             {PHONE_DISPLAY}
           </a>
           <motion.a
-            href={CONSULTATIONS_URL}
+            href={CONTACT_HREF}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
             className="group inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-display text-sm font-semibold text-ink-950 shadow-[0_4px_24px_-6px_rgba(255,255,255,0.35)] ring-focus transition-colors hover:bg-accent-300"
@@ -135,7 +135,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href={CONSULTATIONS_URL}
+                href={CONTACT_HREF}
                 onClick={() => setOpen(false)}
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}

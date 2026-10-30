@@ -1,7 +1,7 @@
 import { dialPhone } from "../utils/dial";
 import { ArrowRight, CalendarCheck, ShieldCheck, Timer } from "lucide-react";
 import { PrimaryButton, Reveal } from "./ui";
-import { CONSULTATIONS_URL, PHONE_DISPLAY, PHONE_TEL } from "../config";
+import { CONTACT_HREF, PHONE_DISPLAY, PHONE_TEL } from "../config";
 
 const ASSURANCES = [
   {
@@ -58,7 +58,7 @@ export default function CTA() {
 
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <PrimaryButton
-                  href={CONSULTATIONS_URL}
+                  href={CONTACT_HREF}
                   icon={<ArrowRight className="h-4 w-4" />}
                   className="w-full sm:w-auto"
                 >

@@ -1,6 +1,6 @@
 import { ArrowRight, Check } from "lucide-react";
 import { PrimaryButton, Reveal, SectionHeading } from "./ui";
-import { CONSULTATIONS_URL } from "../config";
+import { CONTACT_HREF } from "../config";
 
 const FEATURES = [
   "Administración de servidores y nube",
@@ -30,7 +30,7 @@ export default function PlanView() {
               <p className="mt-3 text-base leading-relaxed text-slate-400">
                 Para operaciones que no pueden detenerse jamás. Cuéntanos cómo trabaja tu negocio y armamos el plan junto contigo.
               </p>
-              <PrimaryButton href={CONSULTATIONS_URL} icon={<ArrowRight className="h-4 w-4" />} className="mt-6 w-full sm:w-auto">
+              <PrimaryButton href={CONTACT_HREF} icon={<ArrowRight className="h-4 w-4" />} className="mt-6 w-full sm:w-auto">
                 Habla con un asesor
               </PrimaryButton>
             </div>

@@ -1,5 +1,7 @@
 /** Datos oficiales de AvenueBits — fuente única de verdad para enlaces y contacto. */
 export const CONSULTATIONS_URL = "https://www.avenuebits.com/consultations/";
+/** Ancla del formulario de contacto: todos los botones de "Agenda" llevan aquí. */
+export const CONTACT_HREF = "#contacto";
 export const AVENUEBITS_URL = "https://www.avenuebits.com/";
 export const ABOUT_URL = "https://www.avenuebits.com/about-avenuebits-technology-partner/";
 export const CONTACTS_URL = "https://www.avenuebits.com/contacts/";

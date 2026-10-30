@@ -13,7 +13,7 @@ import {
   type MouseEvent,
 } from "react";
 import { cn } from "../utils/cn";
-import { CONSULTATIONS_URL } from "../config";
+import { CONTACT_HREF } from "../config";
 
 /* ---------------------------------- Logo ---------------------------------- */
 
@@ -315,7 +315,7 @@ export function SpotlightCard({
 
 export function PrimaryButton({
   children,
-  href = CONSULTATIONS_URL,
+  href = CONTACT_HREF,
   className,
   icon,
 }: {
