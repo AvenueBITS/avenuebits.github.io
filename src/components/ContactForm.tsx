@@ -12,16 +12,17 @@ import {
 import { Reveal, SectionHeading, EASE } from "./ui";
 import { cn } from "../utils/cn";
 import {
+  AGILE_FIELDS,
+  AGILE_FORM_META,
+  AGILE_SUBMIT_URL,
   CONSULTATIONS_URL,
-  HUBSPOT_FIELDS,
-  HUBSPOT_SUBMIT_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
   SERVICE_OPTIONS,
 } from "../config";
 import { dialPhone } from "../utils/dial";
 
-type Values = Record<keyof typeof HUBSPOT_FIELDS, string>;
+type Values = Record<keyof typeof AGILE_FIELDS, string>;
 type Status = "idle" | "sending" | "sent" | "error";
 
 const EMPTY: Values = {
@@ -41,9 +42,17 @@ const ASSURANCES = [
   { icon: CalendarCheck, text: "Diagnóstico de 30 minutos, gratis" },
 ];
 
-/** Cookie de seguimiento de HubSpot: enlaza el envío con las visitas previas. */
-function readHutk() {
-  return document.cookie.match(/(?:^|;\s*)hubspotutk=([^;]+)/)?.[1];
+/**
+ * Enlaza al visitante con su email en las analíticas de Agile (lo mismo que
+ * hace el formulario original de Agile). Si el script de Agile no cargó
+ * (p. ej. un bloqueador), el envío funciona igual.
+ */
+function linkAgileVisitor(email: string) {
+  try {
+    (window as unknown as { _agile?: { set_email?: (e: string) => void } })._agile?.set_email?.(email);
+  } catch {
+    /* sin analíticas no pasa nada */
+  }
 }
 
 function validate(v: Values) {
@@ -121,28 +130,20 @@ export default function ContactForm() {
     if (Object.keys(found).length) return;
 
     setStatus("sending");
-    const fields = (Object.keys(HUBSPOT_FIELDS) as (keyof Values)[])
-      .filter((key) => values[key].trim())
-      .map((key) => ({
-        objectTypeId: "0-1",
-        name: HUBSPOT_FIELDS[key],
-        value: values[key].trim(),
-      }));
+    const body = new URLSearchParams({
+      ...AGILE_FORM_META,
+      _agile_document_url: window.location.href,
+    });
+    for (const key of Object.keys(AGILE_FIELDS) as (keyof Values)[]) {
+      body.append(AGILE_FIELDS[key], values[key].trim());
+    }
+    linkAgileVisitor(values.email.trim());
 
     try {
-      const res = await fetch(HUBSPOT_SUBMIT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          fields,
-          context: {
-            hutk: readHutk(),
-            pageUri: window.location.href,
-            pageName: document.title,
-          },
-        }),
-      });
-      if (!res.ok) throw new Error(String(res.status));
+      const res = await fetch(AGILE_SUBMIT_URL, { method: "POST", body });
+      // Agile responde 200 incluso cuando rechaza el envío: el error va en el texto.
+      const text = await res.text();
+      if (!res.ok || text.includes("Error")) throw new Error(text || String(res.status));
       setStatus("sent");
       setValues(EMPTY);
     } catch {
@@ -152,7 +153,7 @@ export default function ContactForm() {
 
   const props = (key: keyof Values) => ({
     id: `cf-${key}`,
-    name: HUBSPOT_FIELDS[key],
+    name: AGILE_FIELDS[key],
     value: values[key],
     onChange: set(key),
     "aria-invalid": errors[key] ? true : undefined,
@@ -272,8 +273,8 @@ export default function ContactForm() {
                           Elige una opción (o cuéntanoslo abajo)
                         </option>
                         {SERVICE_OPTIONS.map((o) => (
-                          <option key={o.value} value={o.value} className="bg-ink-900 text-white">
-                            {o.label}
+                          <option key={o} value={o} className="bg-ink-900 text-white">
+                            {o}
                           </option>
                         ))}
                       </select>
