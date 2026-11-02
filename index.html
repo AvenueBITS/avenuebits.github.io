@@ -6,6 +6,17 @@
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/247802838.js"></script>
     <!-- End of HubSpot Embed Code -->
+    <!-- AgileCRM: analíticas de visitas (el formulario de contacto envía a Agile) -->
+    <script type="text/javascript">
+      var Agile_API = Agile_API || {};
+      Agile_API.on_after_load = function () {
+        _agile.set_account("qkj3na5vvisuj8ut79vp5t1dd0", "avenuebits", false);
+        _agile.track_page_view();
+        try { _agile_execute_web_rules(); } catch (e) {}
+      };
+    </script>
+    <script id="_agile_min_js" async type="text/javascript" src="https://avenuebits.agilecrm.com/stats/min/agile-min.js"></script>
+    <!-- End AgileCRM -->
     <meta
       name="description"
       content="AvenueBits — Servicios de TI administrados para negocios hispanos en Estados Unidos. Monitoreo 24/7, ciberseguridad y soporte técnico 100% en español por una tarifa mensual predecible."
