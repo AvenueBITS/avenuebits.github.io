@@ -49,6 +49,16 @@ export const AGILE_FIELDS = {
   details: "Detalle de lo que necesita",
 };
 
+/**
+ * Casilla de permiso para SMS, copiada del formulario de Agile. Si se marca,
+ * se envía un segundo campo "tags" con este valor (igual que hace Agile), y el
+ * contacto queda con la etiqueta "Acepto SMS" además de Fuente_Formulario_Landing.
+ * El texto es el aprobado: no cambiarlo sin cambiarlo también en Agile.
+ */
+export const SMS_CONSENT_TAG = "Acepto SMS";
+export const SMS_CONSENT_TEXT =
+  "Acepto recibir mensajes de texto (SMS) de marketing de AvenueBITS al número indicado, sobre servicios y promociones de IT. Frecuencia variable, hasta 4 mensajes al mes. Pueden aplicar cargos por mensajes y datos. Responda STOP para darse de baja o HELP para ayuda. Aceptar no es condición para recibir la consulta.";
+
 /** Opciones del desplegable: deben ser idénticas a las del formulario de Agile. */
 export const SERVICE_OPTIONS: string[] = [
   "Soporte técnico de equipos (IT Office Pro)",

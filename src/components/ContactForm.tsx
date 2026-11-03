@@ -19,6 +19,8 @@ import {
   PHONE_DISPLAY,
   PHONE_TEL,
   SERVICE_OPTIONS,
+  SMS_CONSENT_TAG,
+  SMS_CONSENT_TEXT,
 } from "../config";
 import { dialPhone } from "../utils/dial";
 
@@ -114,6 +116,7 @@ export default function ContactForm() {
   const [errors, setErrors] = useState<ReturnType<typeof validate>>({});
   const [status, setStatus] = useState<Status>("idle");
   const [honeypot, setHoneypot] = useState("");
+  const [smsConsent, setSmsConsent] = useState(false);
 
   const set =
     (key: keyof Values) =>
@@ -137,6 +140,7 @@ export default function ContactForm() {
     for (const key of Object.keys(AGILE_FIELDS) as (keyof Values)[]) {
       body.append(AGILE_FIELDS[key], values[key].trim());
     }
+    if (smsConsent) body.append("tags", SMS_CONSENT_TAG);
     linkAgileVisitor(values.email.trim());
 
     try {
@@ -146,6 +150,7 @@ export default function ContactForm() {
       if (!res.ok || text.includes("Error")) throw new Error(text || String(res.status));
       setStatus("sent");
       setValues(EMPTY);
+      setSmsConsent(false);
     } catch {
       setStatus("error");
     }
@@ -290,6 +295,26 @@ export default function ContactForm() {
                       />
                     </Field>
 
+                    {/* Permiso de SMS: opcional y desmarcado por defecto. */}
+                    <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 sm:col-span-2">
+                      <p id="cf-sms-text" className="text-xs leading-relaxed text-slate-400">
+                        {SMS_CONSENT_TEXT}
+                      </p>
+                      <label htmlFor="cf-sms" className="mt-3 inline-flex cursor-pointer items-center gap-2.5 text-sm font-medium text-white">
+                        <input
+                          id="cf-sms"
+                          type="checkbox"
+                          name="tags"
+                          value={SMS_CONSENT_TAG}
+                          checked={smsConsent}
+                          onChange={(e) => setSmsConsent(e.target.checked)}
+                          aria-describedby="cf-sms-text"
+                          className="h-4 w-4 shrink-0 cursor-pointer rounded border-white/20 bg-white/[0.05] accent-sky-400 ring-focus"
+                        />
+                        Acepto SMS
+                      </label>
+                    </div>
+
                     {/* Campo trampa contra bots: invisible para personas. */}
                     <input
                       type="text"
@@ -303,7 +328,7 @@ export default function ContactForm() {
 
                     <div className="mt-2 flex flex-col items-center gap-4 sm:col-span-2 sm:flex-row sm:justify-between">
                       <p className="text-center text-xs leading-relaxed text-slate-500 sm:text-left">
-                        Usaremos tus datos solo para responder a tu solicitud.
+                        Usaremos tus datos para responder a tu solicitud.
                       </p>
                       <motion.button
                         type="submit"
