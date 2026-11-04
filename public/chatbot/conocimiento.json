@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-04",
+
+  "enlaces": {
+    "presencial": "https://calendly.com/avenuebits?utm_source=chat_landing",
+    "remota": "https://calendly.com/avenuebits-support?utm_source=chat_landing"
+  },
+
+  "interfaz": {
+    "titulo": "AvenueBITS",
+    "subtitulo": "Le respondemos al instante",
+    "abrir": "Abrir el chat de AvenueBITS",
+    "cerrar": "Cerrar el chat",
+    "etiquetaEntrada": "Escriba su mensaje",
+    "placeholder": "Escriba su pregunta…",
+    "enviar": "Enviar",
+    "contador": "caracteres",
+    "lanzador": "¿Hablamos?"
+  },
+
+  "botones": {
+    "agendar": { "es": "Agendar consulta gratuita", "en": "Book a free consultation" },
+    "presencial": { "es": "Presencial", "en": "On-site" },
+    "remota": { "es": "Remota", "en": "Remote" },
+    "noSe": { "es": "No estoy seguro", "en": "Not sure" },
+    "servicios": { "es": "Ver servicios", "en": "See services" },
+    "noGracias": { "es": "No, gracias", "en": "No, thanks" },
+    "enlacePresencial": { "es": "Agendar consulta presencial", "en": "Book an on-site consultation" },
+    "enlaceRemota": { "es": "Agendar consulta remota", "en": "Book a remote consultation" }
+  },
+
+  "mensajes": {
+    "saludo": {
+      "es": "¡Hola! Le damos la bienvenida; le escribe el equipo de AvenueBITS. Cuéntenos, ¿qué necesita su negocio? Puede escribirlo con sus propias palabras o elegir una opción.",
+      "en": "Hi! Welcome, this is the AvenueBITS team. Tell us, what does your business need? Type it in your own words or pick an option."
+    },
+    "saludoDeNuevo": {
+      "es": "¡Hola! ¿En qué podemos ayudar a su negocio? Puede escribirlo o elegir una opción.",
+      "en": "Hi! How can we help your business? Type your question or pick an option."
+    },
+    "cierre": {
+      "es": "¿Le gustaría revisar su caso con nuestro equipo en una consulta gratuita y sin compromiso?",
+      "en": "Would you like to go over your case with our team in a free, no-obligation consultation?"
+    },
+    "consultaPregunta": {
+      "es": "¡Con gusto! La consulta es gratuita y sin compromiso. ¿La prefiere presencial, en su negocio, o remota, por videollamada?",
+      "en": "Happy to help! The consultation is free and with no obligation. Would you prefer it on-site, at your business, or remote, by video call?"
+    },
+    "presencial": {
+      "es": "Perfecto. En este enlace puede elegir el día y la hora de su consulta presencial:",
+      "en": "Great. Use this link to pick the day and time for your on-site consultation:"
+    },
+    "remota": {
+      "es": "Perfecto. En este enlace puede elegir el día y la hora de su consulta remota por videollamada:",
+      "en": "Great. Use this link to pick the day and time for your remote video-call consultation:"
+    },
+    "indiferente": {
+      "es": "Las dos son gratuitas. En la presencial, nuestro equipo le atiende en su negocio; en la remota, conversamos por videollamada desde donde usted esté. Elija la que le resulte más cómoda:",
+      "en": "Both are free. On-site, our team meets you at your business; remote, we talk by video call wherever you are. Pick whichever is most convenient:"
+    },
+    "despedidaAgenda": {
+      "es": "¡Gracias por su interés! Le esperamos en la consulta. Si mientras tanto le surge otra duda, escríbala aquí y con gusto le respondemos.",
+      "en": "Thank you for your interest! We look forward to meeting you. If any other question comes up in the meantime, just type it here."
+    },
+    "noEntendi": {
+      "es": "Disculpe, no estoy seguro de haber entendido su pregunta. ¿Se refiere a alguno de estos temas? También puede contarnos su caso directamente en una consulta gratuita.",
+      "en": "Sorry, I'm not sure I understood your question. Do you mean one of these topics? You can also tell us about your case directly in a free consultation."
+    },
+    "persona": {
+      "es": "Con gusto le atiende una persona de nuestro equipo en la consulta gratuita: ahí revisamos su caso y respondemos todas sus preguntas. Si necesita soporte inmediato, también puede llamarnos al 631-913-1799.",
+      "en": "A member of our team will gladly help you in the free consultation, where we review your case and answer all your questions. If you need immediate support, you can also call us at 631-913-1799."
+    },
+    "bot": {
+      "es": "Soy el asistente automático del equipo de AvenueBITS: le oriento con la información publicada en nuestro sitio. Si prefiere hablar con una persona, nuestro equipo le atiende en la consulta gratuita.",
+      "en": "I'm the AvenueBITS team's automated assistant: I guide you with the information published on our website. If you'd rather talk to a person, our team will help you in the free consultation."
+    },
+    "precio": {
+      "es": "Cada negocio es distinto, por eso no damos precios por este chat. En la consulta gratuita nuestro equipo revisa lo que necesita y le explica las opciones para su caso, sin compromiso.",
+      "en": "Every business is different, so we don't quote prices in this chat. In the free consultation our team reviews what you need and explains the options for your case, with no obligation."
+    },
+    "noGracias": {
+      "es": "Sin problema. ¿Hay algo más en lo que podamos orientarle?",
+      "en": "No problem. Is there anything else we can help you with?"
+    },
+    "gracias": {
+      "es": "¡Gracias a usted! Si tiene otra pregunta, aquí estamos.",
+      "en": "Thank you! If you have another question, we're here."
+    },
+    "despedida": {
+      "es": "¡Que tenga un excelente día! Cuando quiera, aquí estamos para ayudarle.",
+      "en": "Have a great day! We're here whenever you need us."
+    },
+    "servicios": {
+      "es": "Estos son nuestros servicios principales. ¿Cuál se acerca más a lo que necesita?",
+      "en": "These are our main services. Which one is closest to what you need?"
+    },
+    "muyLargo": {
+      "es": "Su mensaje es un poco largo. Por favor, escríbalo en 500 caracteres o menos para que podamos ayudarle.",
+      "en": "Your message is a bit long. Please keep it to 500 characters or less so we can help."
+    }
+  },
+
+  "botonesInicio": ["servicios-it", "espanol", "ciberseguridad", "redes", "telefonia", "sitios-web", "edificio-inteligente"],
+  "sugerenciasPorDefecto": ["servicios-it", "ciberseguridad", "consultoria"],
+
+  "intenciones": {
+    "precio": {
+      "es": ["precio", "precios", "cuánto cuesta", "cuanto cuesta", "cuánto cobran", "cuánto vale", "costo", "costos", "tarifa", "tarifas", "cotización", "cotizar", "presupuesto", "mensualidad", "cuánto sale", "cuánto me cuesta"],
+      "en": ["price", "prices", "pricing", "how much", "cost", "costs", "quote", "rate", "rates", "fee", "fees", "estimate"]
+    },
+    "persona": {
+      "es": ["hablar con una persona", "hablar con alguien", "persona real", "un humano", "ser humano", "hablar con un humano", "agente", "representante", "operador", "hablar con un asesor", "atención personal", "me atienda alguien"],
+      "en": ["talk to a person", "talk to someone", "speak to someone", "real person", "human", "agent", "representative", "operator", "talk to a human", "speak with a person"]
+    },
+    "bot": {
+      "es": ["robot", "eres un bot", "eres bot", "chatbot", "eres humano", "eres una persona", "eres real", "máquina", "estoy hablando con una máquina", "respuesta automática"],
+      "en": ["robot", "are you a bot", "chatbot", "are you human", "are you real", "machine", "am i talking to a bot"]
+    },
+    "consulta": {
+      "es": ["agendar", "agenda", "agendo", "cita", "reservar", "consulta gratuita", "consulta gratis", "programar una reunión", "reunión", "me interesa", "quiero empezar", "asesoría gratuita"],
+      "en": ["book", "booking", "schedule", "appointment", "free consultation", "consultation", "meeting", "sign me up", "interested", "get started", "set up a call"]
+    },
+    "consultaDebil": {
+      "es": ["consulta"],
+      "en": []
+    },
+    "presencial": {
+      "es": ["presencial", "en persona", "en mi negocio", "en mi oficina", "en mi local", "en sitio", "que vengan", "vengan"],
+      "en": ["on-site", "onsite", "on site", "in person", "in-person", "at my office", "at my business", "come over"]
+    },
+    "remota": {
+      "es": ["remota", "remoto", "videollamada", "video llamada", "en línea", "online", "virtual", "zoom", "por internet", "a distancia", "por video"],
+      "en": ["remote", "remotely", "video call", "videocall", "virtual", "virtually", "zoom", "online"]
+    },
+    "indiferente": {
+      "es": ["no sé", "no se", "cualquiera", "da igual", "me da igual", "ambas", "las dos", "no estoy seguro", "no estoy segura", "cuál es la diferencia", "diferencia", "lo que sea", "cualquier"],
+      "en": ["not sure", "don't know", "dont know", "either", "any", "whatever", "both", "difference", "no preference"]
+    },
+    "afirmacion": {
+      "es": ["sí", "si", "claro", "ok", "okay", "dale", "por supuesto", "de acuerdo", "perfecto", "bueno", "sí quiero", "si quiero", "me parece bien", "va", "listo"],
+      "en": ["yes", "sure", "yeah", "yep", "ok", "okay", "please", "of course", "sounds good", "let's do it"]
+    },
+    "negacion": {
+      "es": ["no", "no gracias", "ahora no", "después", "luego", "más tarde", "todavía no", "aún no"],
+      "en": ["no", "no thanks", "not now", "later", "nope", "maybe later", "not yet"]
+    },
+    "saludo": {
+      "es": ["hola", "buenas", "buenos días", "buenas tardes", "buenas noches", "qué tal", "saludos"],
+      "en": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"]
+    },
+    "gracias": {
+      "es": ["gracias", "muchas gracias", "mil gracias", "te agradezco", "le agradezco"],
+      "en": ["thank you", "thanks", "thx", "appreciate it"]
+    },
+    "despedida": {
+      "es": ["adiós", "adios", "chao", "chau", "hasta luego", "hasta pronto", "nos vemos"],
+      "en": ["bye", "goodbye", "see you", "see ya"]
+    }
+  },
+
+  "temas": [
+    {
+      "id": "servicios-it",
+      "titulo": { "es": "Soporte y servicios de IT", "en": "IT support and services" },
+      "palabras": {
+        "es": ["servicios de it", "soporte de it", "soporte técnico", "soporte tecnico", "ayuda técnica", "técnico", "informática", "informático", "sistemas", "departamento de it", "no tengo técnico", "no tenemos técnico", "tercerizar", "externalizar", "soporte 24/7", "24/7", "tecnología", "soporte remoto", "ayuda con la computadora", "ayuda con computadoras"],
+        "en": ["it services", "it support", "tech support", "technical support", "it department", "outsource", "outsourcing", "24/7 support", "remote support", "computer help", "technology"]
+      },
+      "respuesta": {
+        "es": "Si su negocio no tiene departamento de IT, o tiene uno pequeño, podemos encargarnos de esas tareas por usted. Nuestro equipo da soporte de IT 24/7 en español, con monitoreo para actuar a tiempo cuando algo falla. Así usted se dedica a su negocio y no a resolver problemas técnicos.",
+        "en": "If your business has no IT department, or a small one, we can take those tasks off your plate. Our team provides 24/7 IT support, in English or Spanish, with monitoring so we act at the right time when something goes wrong. That way you focus on your business, not on technical problems."
+      },
+      "servicio": { "es": "Servicios de IT", "en": "IT Services" },
+      "relacionados": ["it-administrado", "it-office-pro", "respaldos"]
+    },
+    {
+      "id": "it-administrado",
+      "titulo": { "es": "IT administrado", "en": "Managed IT" },
+      "palabras": {
+        "es": ["it administrado", "servicios administrados", "servicios de it administrados", "mesa de ayuda", "help desk", "monitoreo", "mantenimiento preventivo", "soporte preventivo", "problemas recurrentes", "siempre falla", "se cae todo el tiempo", "fallas constantes", "paquete de soporte", "inventario de equipos", "gestión de sistemas"],
+        "en": ["managed it", "managed services", "managed it services", "help desk", "helpdesk", "monitoring", "preventive maintenance", "proactive support", "recurring problems", "keeps failing", "asset tracking", "system management"]
+      },
+      "respuesta": {
+        "es": "Con los servicios de IT administrados, usted delega en nosotros la gestión y el monitoreo de sus sistemas para ganar productividad y reducir gastos. Armamos paquetes a su medida que pueden incluir mesa de ayuda, control de equipos, copias de seguridad en la nube, continuidad del negocio y protección de la red. El enfoque es preventivo, para evitar interrupciones antes de que ocurran.",
+        "en": "With managed IT services, you hand over the management and monitoring of your systems to us to boost productivity and reduce expenses. We build custom packages that can include help desk, asset tracking, cloud backups, business continuity and network protection. The approach is proactive, to prevent downtime before it happens."
+      },
+      "servicio": { "es": "Servicios de IT administrados", "en": "Managed IT Services" },
+      "relacionados": ["respaldos", "ciberseguridad", "it-office-pro"]
+    },
+    {
+      "id": "it-office-pro",
+      "titulo": { "es": "Reparación de equipos (IT Office Pro)", "en": "Device repair (IT Office Pro)" },
+      "palabras": {
+        "es": ["la compu está lenta", "la computadora está lenta", "computadora lenta", "compu lenta", "pc lenta", "laptop lenta", "va lenta", "no prende", "no enciende", "se apaga sola", "está trabada", "se me traba la computadora", "se congela", "pantalla azul", "impresora", "no imprime", "reparar", "reparación", "arreglar", "se dañó", "se descompuso", "no funciona", "computadora", "computadoras", "compu", "laptop", "equipo de oficina", "equipos de oficina", "hardware", "software", "programa no abre", "reloj checador no funciona", "sistema de audio", "bocinas", "it office pro"],
+        "en": ["computer is slow", "slow computer", "slow pc", "slow laptop", "won't turn on", "doesn't turn on", "freezing", "frozen", "crashing", "blue screen", "printer", "not printing", "repair", "fix", "broken", "not working", "computer", "computers", "laptop", "office equipment", "hardware", "software", "audio system", "it office pro"]
+      },
+      "respuesta": {
+        "es": "Con IT Office Pro, nuestros especialistas diagnostican y resuelven fallas de hardware y software en sus equipos de oficina: computadoras, impresoras, equipos de red, teléfonos, relojes de asistencia y sistemas de audio. Vamos a su negocio con lo necesario para resolver el problema y devolverle la tranquilidad. Si las fallas se repiten, le conviene además el soporte preventivo de IT administrado.",
+        "en": "With IT Office Pro, our specialists diagnose and fix hardware and software problems in your office equipment: computers, printers, network devices, phones, timekeeping systems and audio systems. We come on-site, fully equipped to solve the problem and restore your peace of mind. If problems keep coming back, our proactive managed IT services are a good fit."
+      },
+      "servicio": { "es": "Soporte técnico de equipos (IT Office Pro)", "en": "IT Office Pro" },
+      "relacionados": ["it-administrado", "windows-11", "soporte-inmediato"]
+    },
+    {
+      "id": "respaldos",
+      "titulo": { "es": "Copias de seguridad", "en": "Backups" },
+      "palabras": {
+        "es": ["respaldo", "respaldos", "copia de seguridad", "copias de seguridad", "backup", "perdí mis archivos", "perdí información", "perdí los datos", "se borraron", "se borró", "recuperar archivos", "nube", "almacenamiento", "recuperación ante desastres", "continuidad del negocio"],
+        "en": ["backup", "backups", "lost my files", "lost data", "deleted files", "recover files", "cloud storage", "cloud", "disaster recovery", "business continuity"]
+      },
+      "respuesta": {
+        "es": "Dentro de nuestros servicios de IT administrados ofrecemos almacenamiento en la nube y copias de seguridad administradas, además de planes de continuidad del negocio y recuperación ante desastres. El objetivo es que su información esté protegida y que su negocio pueda seguir funcionando si algo sale mal.",
+        "en": "As part of our managed IT services we offer cloud storage and managed backups, plus business continuity and disaster recovery plans. The goal is to keep your information protected and your business running if something goes wrong."
+      },
+      "servicio": { "es": "Servicios de IT administrados", "en": "Managed IT Services" },
+      "relacionados": ["it-administrado", "ciberseguridad"]
+    },
+    {
+      "id": "telefonia",
+      "titulo": { "es": "Telefonía y VoIP", "en": "Phones and VoIP" },
+      "palabras": {
+        "es": ["teléfono", "teléfonos", "telefonía", "telefonia", "voip", "llamadas", "central telefónica", "conmutador", "extensiones", "línea telefónica", "pbx", "sistema telefónico", "videoconferencia", "telefonía en la nube"],
+        "en": ["phone", "phones", "phone system", "telephone", "voip", "calls", "pbx", "extensions", "phone line", "video conferencing", "cloud phone"]
+      },
+      "respuesta": {
+        "es": "Ofrecemos sistemas de telefonía y VoIP económicos y potentes para pequeñas y medianas empresas, alojados en su oficina o en la nube. Se integran con la mayoría de los equipos que ya tiene, así que no necesita gastar en equipos innecesarios, y paga solo por lo que usa. Puede seguir con su proveedor actual o elegir con nosotros un servicio más flexible y económico.",
+        "en": "We offer cost-effective, powerful phone and VoIP systems for small and medium businesses, hosted on-site or in the cloud. They work with most of the equipment you already have, so there's no need to spend on unnecessary hardware, and you pay only for what you use. You can keep your current provider or choose a more flexible, affordable service with us."
+      },
+      "servicio": { "es": "Telefonía y VoIP", "en": "Telephony and VoIP" },
+      "relacionados": ["redes", "servicios-it"]
+    },
+    {
+      "id": "sitios-web",
+      "titulo": { "es": "Sitios web", "en": "Websites" },
+      "palabras": {
+        "es": ["página web", "pagina web", "sitio web", "web", "diseño web", "diseño de página", "hosting", "alojamiento web", "seo", "aparecer en google", "presencia en internet", "presencia en línea", "mi página no funciona", "rediseño"],
+        "en": ["website", "web site", "web page", "web design", "hosting", "seo", "google ranking", "online presence", "redesign"]
+      },
+      "respuesta": {
+        "es": "Creamos y alojamos sitios web que se adaptan al celular, son ligeros, seguros, amigables con los buscadores (SEO) y se integran con otras aplicaciones. Y no nos quedamos en el lanzamiento: le damos reportes claros para ver qué funciona y recomendaciones para mejorar sus resultados con el tiempo.",
+        "en": "We build and host websites that are mobile-friendly, lightweight, secure, SEO-friendly and integrated with other apps. And we don't stop at launch: you get clear reports on what's working and tailored recommendations to improve your results over time."
+      },
+      "servicio": { "es": "Diseño de sitios web", "en": "Website Design" },
+      "relacionados": ["consultoria", "servicios-it"]
+    },
+    {
+      "id": "consultoria",
+      "titulo": { "es": "Consultoría de tecnología", "en": "Technology consulting" },
+      "palabras": {
+        "es": ["consultoría", "consultoria", "consultor", "asesoría", "asesoria", "asesoramiento", "estrategia", "estrategia tecnológica", "crecer", "hacer crecer mi negocio", "crecimiento", "plan tecnológico", "procesos", "digitalizar", "modernizar", "qué tecnología necesito", "colaboración", "orientación"],
+        "en": ["consulting", "consultant", "advice", "advisor", "strategy", "technology strategy", "grow my business", "growth", "processes", "digitize", "modernize", "what technology do i need", "guidance"]
+      },
+      "respuesta": {
+        "es": "Si le cuesta seguir el ritmo de la tecnología, nuestros asesores le ayudan a usarla para proteger y hacer crecer su negocio. Creamos estrategias a largo plazo enfocadas en automatización, procesos, continuidad del negocio, seguridad y colaboración, para que no gaste tiempo ni dinero en productos que no encajan con lo que necesita. Trabajamos en su oficina o de forma remota, con horarios que se ajustan a usted.",
+        "en": "If keeping pace with technology is hard, our advisors help you use it to protect and grow your business. We create long-term strategies focused on automation, process flow, business continuity, security and collaboration, so you don't waste time or money on products that don't fit your needs. We work on-site or remotely, on a schedule that suits your office."
+      },
+      "servicio": { "es": "Consultoría de tecnología para negocios", "en": "Business Technology Consulting" },
+      "relacionados": ["redes", "ciberseguridad", "cumplimiento"]
+    },
+    {
+      "id": "redes",
+      "titulo": { "es": "Redes e internet", "en": "Networks and internet" },
+      "palabras": {
+        "es": ["red", "redes", "internet lento", "el internet está lento", "no hay internet", "se cae el internet", "internet", "wifi", "wi-fi", "señal", "router", "módem", "modem", "switch", "firewall", "cableado", "cables de red", "vpn", "conexión", "conexión entre sucursales", "sucursales", "puntos de red"],
+        "en": ["network", "networking", "slow internet", "internet is down", "no internet", "internet", "wifi", "wi-fi", "signal", "router", "modem", "switch", "firewall", "cabling", "vpn", "connection", "branch offices"]
+      },
+      "respuesta": {
+        "es": "Le ayudamos a mejorar, reparar o proteger la red de su negocio: conexión en la oficina, acceso a internet, conexión entre sucursales, VPN y seguridad de red. Nuestros especialistas optimizan el rendimiento con soluciones rentables, y también le orientamos en la compra de equipos o le suministramos firewalls, switches y routers.",
+        "en": "We help you upgrade, troubleshoot or secure your business network: office connectivity, internet access, inter-office connections, VPNs and network security. Our specialists optimize performance with cost-effective solutions, and we can advise on hardware purchases or supply firewalls, switches and routers."
+      },
+      "servicio": { "es": "Consultoría de redes", "en": "Networking Consulting" },
+      "relacionados": ["ciberseguridad", "telefonia", "it-administrado"]
+    },
+    {
+      "id": "ciberseguridad",
+      "titulo": { "es": "Ciberseguridad", "en": "Cybersecurity" },
+      "palabras": {
+        "es": ["me hackearon", "hackearon", "hackeo", "hackeado", "hacker", "hackers", "virus", "malware", "ransomware", "ciberseguridad", "seguridad informática", "ataque", "ciberataque", "phishing", "correo sospechoso", "me robaron la cuenta", "robo de datos", "contraseña", "contraseñas", "antivirus", "proteger mi información", "protección de datos"],
+        "en": ["hacked", "got hacked", "hacker", "virus", "malware", "ransomware", "cybersecurity", "cyber security", "attack", "cyberattack", "phishing", "suspicious email", "data breach", "password", "antivirus", "protect my data"]
+      },
+      "respuesta": {
+        "es": "Los ataques informáticos no solo afectan a las grandes empresas, por eso es clave proteger la tecnología de la que depende su negocio. Nuestro equipo de ciberseguridad reduce el riesgo de que usted sea víctima de un delito informático. Si cree que ya sufrió un ataque y necesita ayuda inmediata, llámenos al 631-913-1799.",
+        "en": "Cyberattacks don't only target large companies, so protecting the technology your business depends on is a must. Our cybersecurity team reduces your risk of becoming a victim of cybercrime. If you think you've already been attacked and need immediate help, call us at 631-913-1799."
+      },
+      "servicio": { "es": "Ciberseguridad", "en": "Cybersecurity" },
+      "relacionados": ["respaldos", "redes", "cumplimiento"]
+    },
+    {
+      "id": "cumplimiento",
+      "titulo": { "es": "Cumplimiento normativo", "en": "Regulatory compliance" },
+      "palabras": {
+        "es": ["cumplimiento", "cumplimiento normativo", "normativa", "normativas", "regulación", "regulaciones", "normas", "auditoría", "requisitos legales"],
+        "en": ["compliance", "regulation", "regulations", "regulatory", "audit", "legal requirements"]
+      },
+      "respuesta": {
+        "es": "Cumplir con regulaciones que cambian constantemente es un reto para negocios de todos los tamaños. Le ayudamos a que su IT cumpla las normas que le aplican y a mantener ese cumplimiento cuando cambian, para que usted se concentre en atender a sus clientes.",
+        "en": "Keeping up with ever-changing regulations is a challenge for businesses of all sizes. We help your IT meet the standards that apply to you and stay compliant as they change, so you can focus on serving your customers."
+      },
+      "servicio": { "es": "Cumplimiento normativo", "en": "Regulation Compliance" },
+      "relacionados": ["ciberseguridad", "consultoria"]
+    },
+    {
+      "id": "ia-automatizacion",
+      "titulo": { "es": "IA y automatización", "en": "AI and automation" },
+      "palabras": {
+        "es": ["inteligencia artificial", "ia", "automatización", "automatizacion", "automatizar", "automatizar procesos", "tareas repetitivas", "ahorrar tiempo", "productividad", "ser más eficiente", "eficiencia", "dispositivos conectados"],
+        "en": ["artificial intelligence", "ai", "automation", "automate", "repetitive tasks", "save time", "productivity", "efficiency", "connected devices"]
+      },
+      "respuesta": {
+        "es": "¿Qué hacen distinto las grandes empresas? Son eficientes e innovan. Con IA y automatización aceleramos los procesos de su negocio aprovechando dispositivos conectados y la tecnología que ya tiene, para aumentar la productividad y reducir costos.",
+        "en": "What do Fortune 500 companies do differently? They are efficient and innovative. With AI and automation we speed up your business processes using connected devices and the technology you already have, to increase productivity and reduce costs."
+      },
+      "servicio": { "es": "IA y automatización", "en": "AI and Automation" },
+      "relacionados": ["edificio-inteligente", "consultoria"]
+    },
+    {
+      "id": "punto-de-venta",
+      "titulo": { "es": "Punto de venta (POS)", "en": "Point of sale (POS)" },
+      "palabras": {
+        "es": ["punto de venta", "pos", "caja registradora", "caja", "cobrar", "cobros", "ventas", "inventario", "existencias", "tienda", "restaurante", "terminal de pago", "pagos", "varias sucursales"],
+        "en": ["point of sale", "pos", "cash register", "checkout", "sales", "inventory", "stock", "store", "restaurant", "payment terminal", "payments"]
+      },
+      "respuesta": {
+        "es": "Le ayudamos con un sistema de punto de venta (POS) que se convierte en el centro de su negocio: optimiza el inventario, agiliza las ventas y le ayuda a usar sus datos para crecer. Incluye manejo de clientes, varias sucursales, pagos flexibles, cobro móvil y reportes. Y si ya tiene un POS pero necesita ayuda, también estamos para apoyarle.",
+        "en": "We help you with a point of sale (POS) system that becomes the core of your business: it optimizes stock, speeds up sales and helps you use your data to grow. It includes customer management, multiple locations, flexible payments, mobile checkout and reports. And if you already have a POS but need help, we can support you too."
+      },
+      "servicio": { "es": "Punto de venta (POS)", "en": "Point Of Sale" },
+      "relacionados": ["contador-personas", "edificio-inteligente"]
+    },
+    {
+      "id": "luces-inteligentes",
+      "titulo": { "es": "Iluminación inteligente", "en": "Smart lights" },
+      "palabras": {
+        "es": ["luces", "luz", "iluminación", "iluminacion", "led", "focos", "bombillos", "bombillas", "lámparas", "ahorro de energía", "ahorrar energía", "factura de luz", "luces inteligentes"],
+        "en": ["lights", "lighting", "led", "bulbs", "lamps", "energy savings", "save energy", "electric bill", "smart lights"]
+      },
+      "respuesta": {
+        "es": "Instalamos o reemplazamos la iluminación de su oficina con luces LED inteligentes conectadas a su red, fáciles de controlar y monitorear. Ahorra en energía y en mantenimiento, y puede ajustar el color y la intensidad para mejorar el ambiente de trabajo. La inversión se recupera rápido: en la mayoría de los casos, en menos de un año.",
+        "en": "We install or replace your office lighting with smart LED lights connected to your network, easy to control and monitor. You save on energy and maintenance, and you can adjust color and intensity to improve the work environment. The return on investment is fast: in most cases, less than one year."
+      },
+      "servicio": { "es": "Iluminación inteligente", "en": "Smart Lights" },
+      "relacionados": ["edificio-inteligente", "videovigilancia"]
+    },
+    {
+      "id": "videovigilancia",
+      "titulo": { "es": "Videovigilancia", "en": "Video surveillance" },
+      "palabras": {
+        "es": ["cámaras", "cámara", "camaras", "camara", "videovigilancia", "vigilancia", "cámaras de seguridad", "grabaciones", "grabar", "cctv", "robos", "vigilar mi negocio", "dvr", "nvr"],
+        "en": ["cameras", "camera", "security cameras", "video surveillance", "surveillance", "cctv", "recordings", "theft", "monitor my store", "dvr", "nvr"]
+      },
+      "respuesta": {
+        "es": "Ofrecemos sistemas de videovigilancia completos y económicos, con cámaras digitales conectadas por WiFi o por cable de red, y el video guardado en sus propios equipos. Es fácil de monitorear y de revisar las grabaciones, y la instalación sigue políticas estándar de ciberseguridad y control de acceso. Si lo prefiere, el almacenamiento también puede ir en la nube.",
+        "en": "We offer affordable, fully featured surveillance systems, with digital cameras connected by WiFi or network cable and video stored on your own local devices. It's easy to monitor and retrieve recordings, and installations follow standard cybersecurity and access control policies. Cloud storage is also an option if you prefer."
+      },
+      "servicio": { "es": "Videovigilancia", "en": "Video Surveillance" },
+      "relacionados": ["edificio-inteligente", "ciberseguridad"]
+    },
+    {
+      "id": "contador-personas",
+      "titulo": { "es": "Contador de personas", "en": "People counter" },
+      "palabras": {
+        "es": ["contador de personas", "contar personas", "contar clientes", "cuántos clientes entran", "cuánta gente entra", "visitantes", "afluencia", "tráfico de clientes", "conteo de visitas"],
+        "en": ["people counter", "count people", "visitor counting", "foot traffic", "how many customers", "visitors"]
+      },
+      "respuesta": {
+        "es": "Un contador de visitantes le muestra cuántas personas entran a su negocio y en qué momentos. Con esos datos y sus reportes puede decidir mejor cuánto personal necesita, orientar su marketing y llevar su negocio en la dirección correcta.",
+        "en": "A visitor counting system shows you how many people come into your business and when. With that data and its reports you can make better staffing decisions, inform your marketing and lead your business in the right direction."
+      },
+      "servicio": { "es": "Contador de personas", "en": "People Counter" },
+      "relacionados": ["punto-de-venta", "edificio-inteligente"]
+    },
+    {
+      "id": "edificio-inteligente",
+      "titulo": { "es": "Soluciones para su local", "en": "Smart building solutions" },
+      "palabras": {
+        "es": ["edificio inteligente", "local inteligente", "oficina inteligente", "control de acceso", "acceso con tarjeta", "cerradura", "cerraduras", "puertas", "reloj biométrico", "reloj checador", "control de asistencia", "asistencia de empleados", "huella", "huella digital", "marcar entrada", "biométrico", "internet de las cosas", "iot"],
+        "en": ["smart building", "smart office", "access control", "key card", "door lock", "biometric clock", "time clock", "employee attendance", "fingerprint", "clock in", "biometric", "internet of things", "iot"]
+      },
+      "respuesta": {
+        "es": "Para su local u oficina trabajamos con control de acceso, reloj biométrico de asistencia, contador de personas, punto de venta, iluminación inteligente y videovigilancia. En la consulta gratuita le explicamos cuál de estas soluciones encaja mejor con su negocio.",
+        "en": "For your store or office we work with access control, biometric clocking, people counters, point of sale, smart lights and video surveillance. In the free consultation we explain which of these solutions best fits your business."
+      },
+      "servicio": { "es": "Smart Building Services", "en": "Smart Building Services" },
+      "relacionados": ["videovigilancia", "punto-de-venta", "luces-inteligentes"],
+      "cierre": false
+    },
+    {
+      "id": "windows-11",
+      "titulo": { "es": "Pasar a Windows 11", "en": "Upgrading to Windows 11" },
+      "palabras": {
+        "es": ["windows 10", "windows 11", "windows", "actualizar windows", "actualización de windows", "sistema operativo", "fin del soporte de windows"],
+        "en": ["windows 10", "windows 11", "windows", "upgrade windows", "windows update", "operating system", "end of support"]
+      },
+      "respuesta": {
+        "es": "Microsoft dejó de dar soporte a Windows 10 el 14 de octubre de 2025: ya no recibe actualizaciones de seguridad, y eso deja los equipos más expuestos a ataques. Pasar a Windows 11 mejora la seguridad y el rendimiento, y la actualización es gratuita en las computadoras que cumplen los requisitos. En la consulta gratuita revisamos su caso.",
+        "en": "Microsoft ended support for Windows 10 on October 14, 2025: it no longer gets security updates, which leaves devices more exposed to attacks. Upgrading to Windows 11 improves security and performance, and the upgrade is free on eligible PCs. In the free consultation we review your case."
+      },
+      "servicio": { "es": "Soporte técnico de equipos (IT Office Pro)", "en": "IT Office Pro" },
+      "relacionados": ["it-office-pro", "ciberseguridad"],
+      "cierre": false
+    },
+    {
+      "id": "quienes-somos",
+      "titulo": { "es": "Quiénes somos", "en": "About us" },
+      "palabras": {
+        "es": ["quiénes son", "quienes son", "quiénes somos", "sobre ustedes", "acerca de ustedes", "la empresa", "qué es avenuebits", "avenuebits", "a qué se dedican", "qué hacen", "por qué ustedes", "por qué elegirlos", "son confiables"],
+        "en": ["who are you", "about you", "about us", "the company", "what is avenuebits", "avenuebits", "what do you do", "why choose you", "why you"]
+      },
+      "respuesta": {
+        "es": "En AvenueBITS somos más que una empresa de tecnología: somos su aliado para convertir la IT y las telecomunicaciones en herramientas de crecimiento. Ayudamos tanto a negocios que empiezan como a negocios ya establecidos con soluciones innovadoras, escalables y rentables, hechas a su medida. Para nosotros las relaciones importan: servicio excelente, comunicación clara y valor constante.",
+        "en": "At AvenueBITS we're more than a technology company: we're your partner in turning IT and telecommunications into tools for growth. We help both new and established businesses with innovative, scalable and cost-effective solutions tailored to their needs. Relationships matter to us: exceptional service, clear communication and consistent value."
+      },
+      "servicio": { "es": "AvenueBITS", "en": "AvenueBITS" },
+      "relacionados": ["servicios-it", "consultoria"]
+    },
+    {
+      "id": "contacto-ubicacion",
+      "titulo": { "es": "Ubicación y teléfonos", "en": "Location and phone" },
+      "palabras": {
+        "es": ["dirección", "direccion", "dónde están", "donde estan", "dónde quedan", "ubicación", "ubicacion", "dónde está su oficina", "dirección de la oficina", "visitar su oficina", "número de teléfono", "cuál es su teléfono", "cuál es su número", "teléfono de contacto", "número de contacto", "a qué número llamo", "su número", "su teléfono", "llamarlos", "contacto", "contactarlos", "bohemia", "long island", "nueva york"],
+        "en": ["address", "where are you", "location", "where is your office", "office address", "phone number", "call you", "contact", "contact you", "bohemia", "long island", "new york"]
+      },
+      "respuesta": {
+        "es": "Nuestra oficina está en 3330 Veterans Memorial Highway, Suite 1, Bohemia, NY 11716. Puede llamarnos al 631-913-1799; le atendemos en español.",
+        "en": "Our office is at 3330 Veterans Memorial Highway, Suite 1, Bohemia, NY 11716. You can call us at 631-913-1799; we also offer support in Spanish."
+      },
+      "servicio": { "es": "Contacto", "en": "Contact" },
+      "relacionados": ["soporte-inmediato", "servicios-it"]
+    },
+    {
+      "id": "espanol",
+      "titulo": { "es": "Atención en español", "en": "Support in Spanish" },
+      "palabras": {
+        "es": ["español", "en español", "hablan español", "habla español", "atienden en español", "soporte en español", "idioma", "no hablo inglés", "no hablo ingles", "hispano", "hispanos", "latino", "latinos"],
+        "en": ["spanish", "do you speak spanish", "spanish speaking", "language", "bilingual"]
+      },
+      "respuesta": {
+        "es": "Sí: le atendemos en español, para que pueda explicar su problema con sus propias palabras y entender cada paso de la solución. Puede llamarnos al 631-913-1799 o contarnos su caso en una consulta gratuita.",
+        "en": "Yes: we support you in Spanish as well as English, so you can explain your problem in your own words and understand every step of the solution. Call us at 631-913-1799 or tell us about your case in a free consultation."
+      },
+      "servicio": { "es": "Servicios de IT", "en": "IT Services" },
+      "relacionados": ["servicios-it", "it-administrado"],
+      "cierre": false
+    },
+    {
+      "id": "soporte-inmediato",
+      "titulo": { "es": "Necesito ayuda urgente", "en": "I need urgent help" },
+      "palabras": {
+        "es": ["urgente", "urgencia", "emergencia", "ayuda ya", "ahora mismo", "inmediato", "inmediata", "lo antes posible", "se cayó todo", "no funciona nada", "necesito ayuda"],
+        "en": ["urgent", "emergency", "asap", "right now", "immediately", "immediate", "everything is down", "nothing works", "need help"]
+      },
+      "respuesta": {
+        "es": "Si necesita soporte inmediato, llámenos al 631-913-1799 y nuestro equipo le atiende. Si prefiere revisar su caso con calma, también puede agendar una consulta gratuita.",
+        "en": "If you need immediate support, call us at 631-913-1799 and our team will help you. If you'd rather go over your case calmly, you can also book a free consultation."
+      },
+      "servicio": { "es": "Servicios de IT", "en": "IT Services" },
+      "relacionados": ["servicios-it", "ciberseguridad"],
+      "cierre": false
+    }
+  ]
+}

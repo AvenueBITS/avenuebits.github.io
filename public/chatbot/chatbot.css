@@ -1,0 +1,259 @@
+/* Chat de AvenueBITS — usa los colores y tipografías de la landing. */
+.abc-raiz {
+  --abc-fondo: #0a0f1c;
+  --abc-borde: rgba(255, 255, 255, 0.1);
+  --abc-texto: #e2e8f0;
+  --abc-suave: #94a3b8;
+  --abc-bot: #131c31;
+  --abc-usuario: #0284c7;
+  --abc-usuario-texto: #ffffff;
+  --abc-acento: #38bdf8;
+  --abc-acento-texto: #7dd3fc;
+  --abc-lanzador: #38bdf8;
+  --abc-lanzador-texto: #04060d;
+  --abc-entrada: #060a14;
+  --abc-sombra: 0 24px 60px -20px rgba(0, 0, 0, 0.7);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+:root[data-theme="light"] .abc-raiz {
+  --abc-fondo: #ffffff;
+  --abc-borde: rgba(15, 23, 42, 0.12);
+  --abc-texto: #0b1220;
+  --abc-suave: #475569;
+  --abc-bot: #eaf0f8;
+  --abc-usuario: #0369a1;
+  --abc-usuario-texto: #ffffff;
+  --abc-acento: #0284c7;
+  --abc-acento-texto: #075985;
+  --abc-lanzador: #0369a1;
+  --abc-lanzador-texto: #ffffff;
+  --abc-entrada: #f8fafc;
+  --abc-sombra: 0 24px 60px -24px rgba(15, 23, 42, 0.35);
+}
+
+.abc-raiz *,
+.abc-raiz *::before,
+.abc-raiz *::after {
+  box-sizing: border-box;
+}
+
+.abc-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---- Botón flotante ---- */
+.abc-lanzador {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 0 20px 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--abc-lanzador);
+  color: var(--abc-lanzador-texto);
+  font: 600 15px/1 "Space Grotesk", "Inter", sans-serif;
+  box-shadow: var(--abc-sombra);
+  cursor: pointer;
+  transition: transform 160ms ease;
+}
+.abc-lanzador:hover { transform: translateY(-2px); }
+.abc-lanzador:active { transform: scale(0.97); }
+.abc-lanzador svg { width: 22px; height: 22px; }
+.abc-raiz button:focus-visible,
+.abc-raiz a:focus-visible,
+.abc-entrada:focus-visible {
+  outline: 2px solid var(--abc-acento);
+  outline-offset: 3px;
+}
+
+/* ---- Ventana ---- */
+.abc-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 84px;
+  z-index: 61;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  height: min(600px, calc(100vh - 110px));
+  height: min(600px, calc(100dvh - 110px));
+  border: 1px solid var(--abc-borde);
+  border-radius: 20px;
+  background: var(--abc-fondo);
+  color: var(--abc-texto);
+  box-shadow: var(--abc-sombra);
+  overflow: hidden;
+  animation: abc-entrar 180ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.abc-panel[hidden] { display: none; }
+@keyframes abc-entrar {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.abc-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 14px 18px;
+  border-bottom: 1px solid var(--abc-borde);
+}
+.abc-titulo {
+  margin: 0;
+  font: 700 17px/1.2 "Space Grotesk", "Inter", sans-serif;
+  color: var(--abc-texto);
+}
+.abc-subtitulo {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--abc-suave);
+}
+.abc-cerrar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--abc-borde);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--abc-texto);
+  cursor: pointer;
+}
+.abc-cerrar svg { width: 18px; height: 18px; }
+
+.abc-log {
+  position: relative;
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.abc-msg {
+  max-width: 88%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.abc-msg p { margin: 0; }
+.abc-bot {
+  align-self: flex-start;
+  background: var(--abc-bot);
+  border-bottom-left-radius: 6px;
+}
+.abc-usuario {
+  align-self: flex-end;
+  background: var(--abc-usuario);
+  color: var(--abc-usuario-texto);
+  border-bottom-right-radius: 6px;
+}
+
+.abc-rapidos,
+.abc-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.abc-rapido {
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid var(--abc-acento);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--abc-acento-texto);
+  font: 500 14px/1.3 "Inter", sans-serif;
+  text-align: left;
+  cursor: pointer;
+}
+.abc-rapido:hover { background: rgba(56, 189, 248, 0.12); }
+.abc-enlace {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--abc-lanzador);
+  color: var(--abc-lanzador-texto);
+  font: 600 15px/1.2 "Space Grotesk", "Inter", sans-serif;
+  text-decoration: none;
+}
+.abc-enlace::after { content: " \2197"; margin-left: 6px; }
+
+.abc-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 8px;
+  padding: 12px 14px 10px;
+  border-top: 1px solid var(--abc-borde);
+}
+.abc-entrada {
+  min-width: 0;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--abc-borde);
+  border-radius: 12px;
+  background: var(--abc-entrada);
+  color: var(--abc-texto);
+  font: 400 16px/1.2 "Inter", sans-serif;
+}
+.abc-entrada::placeholder { color: var(--abc-suave); }
+.abc-enviar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--abc-lanzador);
+  color: var(--abc-lanzador-texto);
+  cursor: pointer;
+}
+.abc-enviar svg { width: 20px; height: 20px; }
+.abc-contador {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  color: var(--abc-suave);
+  text-align: right;
+}
+
+/* ---- Celular: la ventana ocupa la pantalla ---- */
+@media (max-width: 520px) {
+  .abc-lanzador { right: 16px; bottom: 16px; }
+  .abc-panel {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    height: 100dvh;
+    border-radius: 0;
+    border: 0;
+  }
+  .abc-abierto .abc-lanzador { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .abc-panel { animation: none; }
+  .abc-lanzador { transition: none; }
+}
